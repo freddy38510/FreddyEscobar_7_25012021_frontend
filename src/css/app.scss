@@ -12,3 +12,16 @@
 .bg-custom-grey-light {
   background: $custom-grey-light;
 }
+
+.custom-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.border-bottom {
+  border-bottom: 3px solid $secondary;
+}
+
+h1.text-overline {
+  font-size: 1rem;
+}
