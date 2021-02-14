@@ -2,6 +2,8 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
+import auth from './auth';
+
 Vue.use(Vuex);
 
 /*
@@ -15,6 +17,7 @@ Vue.use(Vuex);
 
 const Store = new Vuex.Store({
   modules: {
+    auth,
   },
   plugins: [createPersistedState()],
 
@@ -22,5 +25,13 @@ const Store = new Vuex.Store({
   // for dev mode only
   strict: process.env.DEBUGGING,
 });
+
+if (process.env.DEV && module.hot) {
+  module.hot.accept(['./auth'], () => {
+    // eslint-disable-next-line global-require
+    const newAuth = require('./auth').default;
+    Store.hotUpdate({ modules: { auth: newAuth } });
+  });
+}
 
 export default Store;
