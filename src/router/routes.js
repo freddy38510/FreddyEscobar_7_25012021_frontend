@@ -19,6 +19,10 @@ const routes = [
           },
         ],
       },
+      {
+        path: 'me',
+        component: () => import('pages/Me.vue'),
+      },
     ],
   },
 
