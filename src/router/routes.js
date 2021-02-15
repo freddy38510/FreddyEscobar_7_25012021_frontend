@@ -6,6 +6,13 @@ const routes = [
       {
         path: '',
         component: () => import('pages/Index.vue'),
+        children: [
+          {
+            name: 'login',
+            path: 'login',
+            component: () => import('components/Login.vue'),
+          },
+        ],
       },
     ],
   },
