@@ -13,10 +13,13 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.9.17",
+    "@vuejs-community/vue-filter-pluralize": "^1.0.7",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "jsonwebtoken": "^8.5.1",
     "quasar": "^1.15.3",
+    "sanitize-html": "^2.3.2",
+    "timeago.js": "^4.0.2",
     "validator": "^13.5.2",
     "vuelidate": "^0.7.6",
     "vuex-persistedstate": "^4.0.0-beta.3"

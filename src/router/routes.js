@@ -23,6 +23,10 @@ const routes = [
         path: 'me',
         component: () => import('pages/Me.vue'),
       },
+      {
+        path: 'submit',
+        component: () => import('pages/Submit.vue'),
+      },
     ],
   },
 
