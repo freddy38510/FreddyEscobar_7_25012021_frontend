@@ -27,6 +27,11 @@ const routes = [
         path: 'submit',
         component: () => import('pages/Submit.vue'),
       },
+      {
+        path: 'post/:slug',
+        component: () => import('pages/Post.vue'),
+        props: true,
+      },
     ],
   },
 
