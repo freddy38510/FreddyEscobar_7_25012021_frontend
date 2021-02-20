@@ -1,6 +1,6 @@
-# Groupomania (groupomania)
+# Groupomania Frontend
 
-Groupomania social network
+> Groupomania social network
 
 ## Install the dependencies
 
