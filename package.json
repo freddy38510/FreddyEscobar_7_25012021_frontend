@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "quasar dev",
     "build": "quasar build",
+    "serve": "quasar serve --history dist/spa",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
